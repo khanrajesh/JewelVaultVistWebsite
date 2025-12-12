@@ -1,0 +1,18 @@
+:root {
+  /* JewelVault golden palette from Color.kt (light) */
+  --primary: #d0b17d;
+  --primary-strong: #ae8f59;
+  --primary-soft: #ffdea8;
+  --secondary: #6d5c3f;
+  --secondary-soft: #f7dfbb;
+  --accent: #ffa500;
+  --bg: linear-gradient(180deg, #fff8ef 0%, #faf3e5 40%, #ffffff 100%);
+  --surface: #fff8ef;
+  --surface-strong: #f5eddf;
+  --card: #ffffff;
+  --text: #1e1b13;
+  --muted: #4e4639;
+  --border: #d1c5b4;
+  --shadow-soft: 0 16px 36px rgba(40, 32, 16, 0.12);
+  --radius: 14px;
+}

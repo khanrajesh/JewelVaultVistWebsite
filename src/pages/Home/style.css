@@ -1,0 +1,60 @@
+.home-immersive {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: flex-start;
+  min-height: 70vh;
+  padding: 1.4rem;
+  background: linear-gradient(135deg, #fff3df 0%, #fff8ef 30%, #ffffff 100%);
+  position: relative;
+}
+
+.hero-copy h1 {
+  margin: 0.2rem 0 0.5rem;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  line-height: 1.1;
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-copy .lead {
+  color: var(--muted);
+}
+
+.spline-side {
+  position: relative;
+  min-height: 40vh;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 28px 52px rgba(20, 12, 4, 0.26);
+  border: 1px solid rgba(209, 197, 180, 0.35);
+  background: radial-gradient(circle at 30% 20%, rgba(255, 222, 168, 0.25), transparent 60%),
+    #0f0c05;
+  z-index: 1;
+}
+
+.spline-fallback {
+  position: relative;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 1.8rem 1.2rem;
+  color: #f5eddf;
+  background: rgba(15, 12, 5, 0.8);
+}
+
+.fallback-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.fallback-text {
+  font-size: 0.9rem;
+  color: #ffdea8;
+  margin-top: 0.25rem;
+}
