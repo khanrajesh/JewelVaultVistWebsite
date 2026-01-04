@@ -1,13 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .page-shell {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: var(--bg);
   color: var(--text);
 }
 
 main {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 1.5rem 1.25rem 3.5rem;
+  flex: 1;
+  width: 100%;
+  margin: 0;
+  padding: 1.5rem 20px 3.5rem;
 }
 
 .nav-shell {
@@ -20,9 +29,10 @@ main {
 }
 
 .nav-bar {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0.65rem 1.25rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0.65rem 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -118,9 +128,9 @@ main {
   margin-top: 2.2rem;
   padding: 1.4rem 1.25rem;
   border-radius: 16px;
-  border: 1px solid var(--border);
-  background: #ffffff;
-  box-shadow: var(--shadow-soft);
+  border: none;
+  background: transparent;
+  box-shadow: none;
 }
 
 .kicker {
@@ -481,13 +491,14 @@ main {
 
 .footer {
   border-top: 1px solid #e2e8f0;
-  padding: 1rem 1.25rem 1.8rem;
+  padding: 1rem 20px 1.8rem;
   margin-top: 2rem;
 }
 
 .footer-inner {
-  max-width: 1120px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   gap: 0.8rem;
@@ -530,7 +541,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-    padding: 0.4rem 1.25rem 1rem;
+    padding: 0.4rem 20px 1rem;
   }
 
   .section-head {
@@ -542,6 +553,6 @@ main {
   }
 
   main {
-    padding-inline: 1rem;
+    padding-inline: 20px;
   }
 }

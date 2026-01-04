@@ -28,9 +28,9 @@ export const mobileFeatureCards = [
     description:
       'Create GST invoices, estimates and drafts with gold, diamond, silver, labour and stone details.',
     bullets: [
-      'PDF invoices/estimates via built-in PdfUtils',
-      'Share instantly over WhatsApp or email',
-      'Handles tax invoice and showroom-style billing',
+      'PDF invoices and estimates with showroom-style layouts',
+      'Share instantly on WhatsApp, email or print',
+      'Supports tax invoices, drafts and quotation flows',
     ],
   },
   {
@@ -38,19 +38,27 @@ export const mobileFeatureCards = [
     description:
       'Item master with categories, purity, weights, images and tags backed by Firestore data.',
     bullets: [
-      'Import items from Excel templates (ImportItems tools)',
-      'Export stock snapshots to Excel for audit',
-      'Search by design, barcode or category',
+      'Import items from Excel templates and update in bulk',
+      'Export stock snapshots to Excel for audit and valuation',
+      'Search by design, barcode, purity, category or tag',
     ],
   },
   {
-    title: 'Labels & Bluetooth printing',
-    description:
-      'Print jewellery labels and receipts straight from mobile to your existing printers.',
+    title: 'Customers & khata',
+    description: 'Customer book with running balances, reminders and ledger exports.',
     bullets: [
-      'QR-coded item labels with store branding',
-      'Supports ESC/POS, ZPL, TSPL and CPCL printers',
-      'Thermal sizes 100mm / 80mm / 58mm and more',
+      'Capture customer profiles and linked transactions',
+      'Khata/ledger view with SMS/WhatsApp reminders',
+      'Export customer statements for collections',
+    ],
+  },
+  {
+    title: 'Labels, printing & backups',
+    description: 'Print labels/receipts and keep data safe with local/cloud backups.',
+    bullets: [
+      'QR/barcode labels using ZPL, TSPL, ESC/POS and CPCL',
+      'Thermal sizes 100/80/58mm plus jewellery label rolls',
+      'Offline-friendly with local + cloud backups and restore',
     ],
   },
 ]
@@ -125,16 +133,21 @@ export const desktopBullets = [
   'Run billing on a big screen while mobile stays active on the floor',
   'Shared data between desktop and mobile (same Firestore store)',
   'Large tables for stock, invoices and exports to Excel/PDF',
+  'Bulk Excel import/export for audit and reconciliation',
+  'User roles, approvals and activity visibility for owners',
+  'Print barcodes/labels and download backup archives',
 ]
 
 export const partnerBullets = [
   'Local software resellers and IT vendors',
-  'CA firms and accounting advisors',
+  'CA firms, accounting advisors and audit firms',
   "Jewellers' associations and buying groups",
+  'POS/printer vendors looking for software partners',
 ]
 
 export const loginBullets = [
   'Use the same mobile number and store used in JewelVault Mobile',
   'Issue OTPs or reuse secure PINs for staff',
   'Map roles (owner/manager/staff) to desktop permissions',
+  'Respect Firestore security rules and user scopes',
 ]

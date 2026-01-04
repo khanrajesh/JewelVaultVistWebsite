@@ -1,3 +1,8 @@
 .pricing-page h2 {
   margin: 0.2rem 0 0.35rem;
 }
+
+.plan-card .check {
+  color: var(--primary-strong, #d0b17d);
+  font-weight: 700;
+}

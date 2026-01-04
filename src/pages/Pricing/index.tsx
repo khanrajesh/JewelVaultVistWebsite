@@ -1,5 +1,39 @@
 import './style.css'
-import { pricingPlans } from '../../content'
+
+const plans = [
+  {
+    name: 'Starter (Mobile)',
+    tag: 'Best for new stores',
+    blurb: 'Mobile-only billing and inventory for single counters.',
+    bullets: [
+      'GST/non-GST invoices, estimates, challans',
+      'Inventory with QR/barcode search',
+      'Customer/khata tracking and reminders',
+      'Basic Excel/PDF export',
+    ],
+  },
+  {
+    name: 'Professional (Mobile + Desktop)',
+    tag: 'Most popular',
+    blurb: 'Counter + back office with advanced labels and roles.',
+    bullets: [
+      'Mobile + desktop companion views',
+      'Advanced label profiles; ESC/POS, ZPL, TSPL, CPCL',
+      'Multi-user roles (owner/manager/staff/accountant)',
+      'Cloud + local backups and restores',
+    ],
+  },
+  {
+    name: 'Enterprise (Chains/Wholesale)',
+    blurb: 'Multi-branch dashboards and custom workflows.',
+    bullets: [
+      'Multi-branch and consolidated reporting',
+      'Custom reports, integrations, and onboarding',
+      'Vendor/purchase workflows with exports',
+      'Dedicated success manager',
+    ],
+  },
+]
 
 export function PricingPage() {
   return (
@@ -9,14 +43,14 @@ export function PricingPage() {
           <div className="kicker">Pricing</div>
           <h2>Simple plans that grow with your showroom</h2>
           <p className="lead">
-            Start with mobile-only billing and add desktop and advanced roles as you expand. Styled
-            like jewellery-focused plans — fill in exact pricing later.
+            Start with mobile-only billing and add desktop, labels, and roles as you expand. Choose a
+            plan that matches your store size; exact prices can be shared on request.
           </p>
         </div>
-        <div className="pill soft">Contact us for exact amounts</div>
+        <div className="pill soft">Talk to us for pricing</div>
       </div>
       <div className="card-grid card-grid-3">
-        {pricingPlans.map((plan) => (
+        {plans.map((plan) => (
           <div
             className={plan.tag ? 'card plan-card plan-card-highlight' : 'card plan-card'}
             key={plan.name}
@@ -27,7 +61,7 @@ export function PricingPage() {
             <ul className="card-list">
               {plan.bullets.map((item) => (
                 <li key={item}>
-                  <span className="check">✓</span>
+                  <span className="check">v</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -38,3 +72,4 @@ export function PricingPage() {
     </div>
   )
 }
+

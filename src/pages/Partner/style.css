@@ -1,3 +1,27 @@
-.partner-page h2 {
+.partner-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.partner-hero h2 {
   margin: 0.2rem 0 0.35rem;
+}
+
+.partner-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.6rem 0;
+}
+
+.partner-grid .card-title {
+  margin-bottom: 0.35rem;
 }
